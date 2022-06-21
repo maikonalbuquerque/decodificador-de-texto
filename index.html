@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/flex.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+    <title>Decodificador de Texto - Alura Challenges Oracle ONE</title>
+</head>
+<body>
+    <header>
+        <nav><h1><img src="imgs/logo.png"/></h1></nav>
+    </header>
+
+    <main>
+        <section class="principal">
+            <div class="encrypt">
+                <textarea id="text-encrypt" placeholder="Digite o texto que deseja criptografar..."></textarea>
+            </div>
+            <div class="encrypted">
+                <textarea id="text-encrypted" placeholder="Nenhuma mensagem criptografada..." disabled></textarea>
+            </div>
+        </section>
+        <section class="botoes">
+            <button id="btn-encriptar" class="btn">Criptografar</button>
+            <button id="btn-copiar" class="btn">Copiar</button>
+            <button id="btn-decriptar" class="btn">Descriptografar</button>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="http://maikon.dev.br" target="_blank">Maikon Albuquerque</a> com parceria da <strong>Alura</strong> &#10084!</p>
+    </footer>
+
+    <script src="js/encrypt.js"></script>
+    <script src="js/decrypt.js"></script>
+    <script src="js/copy.js"></script>
+</body>
+</html>

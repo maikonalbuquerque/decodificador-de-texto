@@ -1,0 +1,63 @@
+body{
+    background-color: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+}
+nav{
+    width: max-content;
+    margin-left: 20px;
+    height: 60px;
+}
+.principal{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+textarea{
+    width: 30rem;
+    height: 17rem;
+    border-style: dashed;
+    border-radius: 15px;
+    border-color: #0A3871;
+    font-size: 20px;
+    padding:20px;
+    resize: none;
+}
+
+#text-encrypted{
+    border-color: #ccc;
+    background: url(../imgs/boy.png) no-repeat right;
+    font-size: 18px;
+}
+
+
+button{
+    width: 10rem;
+    height: 3rem;
+}
+.botoes{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn{
+    background-color: #0A3871;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+footer p{
+    width:fit-content;
+    margin: 40px auto;
+    font-size: 12px;
+}
+
+footer a{
+    text-decoration:none;
+    font-weight: bold;
+    color: #333;
+}
