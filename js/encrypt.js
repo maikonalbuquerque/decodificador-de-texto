@@ -17,11 +17,23 @@ botaoCriptografar.addEventListener("click", function(event){
         resultado = resultado.replace(/o/gi, 'ober')
         resultado = resultado.replace(/u/gi, 'ufat')
    
-    return resultado
-}
+        return resultado
+    }
+
+    function removeAcento (texto){
+
+        var texto = texto.toLowerCase();                                                         
+        texto = texto.replace(new RegExp('[ÁÀÂÃ]','gi'), 'a');
+        texto = texto.replace(new RegExp('[ÉÈÊ]','gi'), 'e');
+        texto = texto.replace(new RegExp('[ÍÌÎ]','gi'), 'i');
+        texto = texto.replace(new RegExp('[ÓÒÔÕ]','gi'), 'o');
+        texto = texto.replace(new RegExp('[ÚÙÛ]','gi'), 'u');
+        texto = texto.replace(new RegExp('[Ç]','gi'), 'c');
+        return texto;                 
+    }
 
     
 
-    recebeTextoEncriptado.value = criptografa(textEncript);
+    recebeTextoEncriptado.value = removeAcento(criptografa(textEncript));
 
 });
